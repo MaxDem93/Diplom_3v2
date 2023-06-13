@@ -1,1 +1,48 @@
-{"uuid":"4ecab28e-bfe4-42a8-8718-43d60b424b84","historyId":"a2f44d438b00f78804092373a2dc5516","fullName":"MainPageSwitchToAccountPageTest.burgerOpenAccountPageSuccessful[0]","labels":[{"name":"package","value":""},{"name":"testClass","value":"MainPageSwitchToAccountPageTest"},{"name":"testMethod","value":"burgerOpenAccountPageSuccessful[0]"},{"name":"suite","value":"MainPageSwitchToAccountPageTest"},{"name":"host","value":"Maria-PC"},{"name":"thread","value":"7524@Maria-PC.main(1)"},{"name":"framework","value":"junit4"},{"name":"language","value":"java"}],"links":[],"name":"burgerOpenAccountPageSuccessful[0]","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1686693422750,"stop":1686693439497}
+{
+  "uuid": "4ecab28e-bfe4-42a8-8718-43d60b424b84",
+  "historyId": "a2f44d438b00f78804092373a2dc5516",
+  "fullName": "MainPageSwitchToAccountPageTest.burgerOpenAccountPageSuccessful[0]",
+  "labels": [
+    {
+      "name": "package",
+      "value": ""
+    },
+    {
+      "name": "testClass",
+      "value": "MainPageSwitchToAccountPageTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "burgerOpenAccountPageSuccessful[0]"
+    },
+    {
+      "name": "suite",
+      "value": "MainPageSwitchToAccountPageTest"
+    },
+    {
+      "name": "host",
+      "value": "Maria-PC"
+    },
+    {
+      "name": "thread",
+      "value": "7524@Maria-PC.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit4"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "burgerOpenAccountPageSuccessful[0]",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686693422750,
+  "stop": 1686693439497
+}

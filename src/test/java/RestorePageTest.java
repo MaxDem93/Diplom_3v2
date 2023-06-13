@@ -7,8 +7,8 @@ import page.CurrentPage;
 import page.RestorePage;
 
 import static driver.WebDriverCreator.createWebDriver;
-import static org.junit.Assert.assertEquals;
 import static elements.UrlList.ACCOUNT_PAGE_URL;
+import static org.junit.Assert.assertEquals;
 
 public class RestorePageTest {
     UserClient userClient = new UserClient();
@@ -18,16 +18,20 @@ public class RestorePageTest {
     public void setUp() {
         driver = createWebDriver();
     }
+
     @After
-    public void cleanUp(){
+    public void cleanUp() {
         CurrentPage currentPage = new CurrentPage(driver);
         String accessToken = currentPage.getAuthToken();
 
-        if(accessToken!=null){userClient.delete(accessToken);}
+        if (accessToken != null) {
+            userClient.delete(accessToken);
+        }
         driver.quit();
     }
+
     @Test
-    public void returnFromRecoveryToLoginSuccessful(){
+    public void returnFromRecoveryToLoginSuccessful() {
         RestorePage recoveryPage = new RestorePage(driver);
         recoveryPage.open();
         recoveryPage.returnToAccountPage();

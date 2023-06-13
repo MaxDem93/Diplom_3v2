@@ -1,1 +1,79 @@
-{"uuid":"678d26be-3c8a-4eab-be02-457c801ee777","historyId":"5251ed9a31c3b838fbfd9908973891b1","fullName":"CabinetTest.redirectFromCabinetToMainPageSuccess","labels":[{"name":"package","value":""},{"name":"testClass","value":"CabinetTest"},{"name":"testMethod","value":"redirectFromCabinetToMainPageSuccess"},{"name":"suite","value":"CabinetTest"},{"name":"host","value":"Maria-PC"},{"name":"thread","value":"3632@Maria-PC.main(1)"},{"name":"framework","value":"junit4"},{"name":"language","value":"java"}],"links":[],"name":"redirectFromCabinetToMainPageSuccess","status":"passed","stage":"finished","steps":[{"name":"Create user model.User@495a9305","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"user","value":"model.User@495a9305"}],"start":1686692759323,"stop":1686692759901},{"name":"Delete user {user}","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"accessToken","value":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODhlMzk4OWVkMjgwMDAxYjMzNzYwMSIsImlhdCI6MTY4NjY5Mjc2MiwiZXhwIjoxNjg2NjkzOTYyfQ.Ss8lOgQdsOB498Gy76GwBuMO8yDYDfMr8hL-cUAczvY"}],"start":1686692764103,"stop":1686692764699}],"attachments":[],"parameters":[],"start":1686692744978,"stop":1686692765441}
+{
+  "uuid": "678d26be-3c8a-4eab-be02-457c801ee777",
+  "historyId": "5251ed9a31c3b838fbfd9908973891b1",
+  "fullName": "CabinetTest.redirectFromCabinetToMainPageSuccess",
+  "labels": [
+    {
+      "name": "package",
+      "value": ""
+    },
+    {
+      "name": "testClass",
+      "value": "CabinetTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "redirectFromCabinetToMainPageSuccess"
+    },
+    {
+      "name": "suite",
+      "value": "CabinetTest"
+    },
+    {
+      "name": "host",
+      "value": "Maria-PC"
+    },
+    {
+      "name": "thread",
+      "value": "3632@Maria-PC.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit4"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "redirectFromCabinetToMainPageSuccess",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Create user model.User@495a9305",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "user",
+          "value": "model.User@495a9305"
+        }
+      ],
+      "start": 1686692759323,
+      "stop": 1686692759901
+    },
+    {
+      "name": "Delete user {user}",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "accessToken",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODhlMzk4OWVkMjgwMDAxYjMzNzYwMSIsImlhdCI6MTY4NjY5Mjc2MiwiZXhwIjoxNjg2NjkzOTYyfQ.Ss8lOgQdsOB498Gy76GwBuMO8yDYDfMr8hL-cUAczvY"
+        }
+      ],
+      "start": 1686692764103,
+      "stop": 1686692764699
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686692744978,
+  "stop": 1686692765441
+}

@@ -1,1 +1,48 @@
-{"uuid":"5f0de0ed-6f54-4517-93f1-b5faf14ac8a0","historyId":"2d4cd6f4ff49db19cef3799ebaec1914","fullName":"ConstructorTest.clickOnSauce","labels":[{"name":"package","value":""},{"name":"testClass","value":"ConstructorTest"},{"name":"testMethod","value":"clickOnSauce"},{"name":"suite","value":"ConstructorTest"},{"name":"host","value":"Maria-PC"},{"name":"thread","value":"7524@Maria-PC.main(1)"},{"name":"framework","value":"junit4"},{"name":"language","value":"java"}],"links":[],"name":"Проверка перехода на вкладку Соусы","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1686693388673,"stop":1686693405082}
+{
+  "uuid": "5f0de0ed-6f54-4517-93f1-b5faf14ac8a0",
+  "historyId": "2d4cd6f4ff49db19cef3799ebaec1914",
+  "fullName": "ConstructorTest.clickOnSauce",
+  "labels": [
+    {
+      "name": "package",
+      "value": ""
+    },
+    {
+      "name": "testClass",
+      "value": "ConstructorTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "clickOnSauce"
+    },
+    {
+      "name": "suite",
+      "value": "ConstructorTest"
+    },
+    {
+      "name": "host",
+      "value": "Maria-PC"
+    },
+    {
+      "name": "thread",
+      "value": "7524@Maria-PC.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit4"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "Проверка перехода на вкладку Соусы",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686693388673,
+  "stop": 1686693405082
+}

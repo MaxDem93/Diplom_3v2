@@ -3,7 +3,6 @@ package client;
 import io.qameta.allure.Step;
 import model.User;
 
-
 import static io.restassured.RestAssured.given;
 
 public class UserClient extends BaseClient {

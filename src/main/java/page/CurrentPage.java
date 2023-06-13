@@ -11,20 +11,20 @@ import java.time.Duration;
 public class CurrentPage {
     private final WebDriver driver;
 
-    public CurrentPage(WebDriver driver){
+    public CurrentPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void waitForUrl(String url){
+    public void waitForUrl(String url) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.urlToBe(url));
     }
 
-    public String getPageUrl(){
+    public String getPageUrl() {
         return driver.getCurrentUrl();
     }
 
-    public String getAuthToken(){
+    public String getAuthToken() {
         LocalStorage localStorage = ((WebStorage) driver).getLocalStorage();
         return localStorage.getItem("accessToken");
     }

@@ -1,17 +1,17 @@
 import client.UserClient;
+import model.User;
+import model.UserGenerator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import page.*;
-import model.User;
-import model.UserGenerator;
 
 import static driver.WebDriverCreator.createWebDriver;
-import static org.junit.Assert.assertEquals;
 import static elements.HeaderElements.TOP_CABINET_BUTTON;
 import static elements.UrlList.ACCOUNT_PAGE_URL;
 import static elements.UrlList.CABINET_PAGE_URL;
+import static org.junit.Assert.assertEquals;
 
 public class RegistrationTest {
     UserClient userClient = new UserClient();
@@ -23,16 +23,18 @@ public class RegistrationTest {
     }
 
     @After
-    public void cleanUp(){
+    public void cleanUp() {
         CurrentPage currentPage = new CurrentPage(driver);
         String accessToken = currentPage.getAuthToken();
 
-        if(accessToken!=null){userClient.delete(accessToken);}
+        if (accessToken != null) {
+            userClient.delete(accessToken);
+        }
         driver.quit();
     }
 
     @Test
-    public void registrationSuccess(){
+    public void registrationSuccess() {
         User user = UserGenerator.getRandom();
 
         RegistrationPage registrationPage = new RegistrationPage(driver);
@@ -61,7 +63,7 @@ public class RegistrationTest {
     }
 
     @Test
-    public void registrationWithPasswordLessThanSixSymbolsFail(){
+    public void registrationWithPasswordLessThanSixSymbolsFail() {
         User user = UserGenerator.getRandom();
         user.setPassword("12345");
 

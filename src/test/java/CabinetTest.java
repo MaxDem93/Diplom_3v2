@@ -1,22 +1,25 @@
+import client.UserClient;
+import model.User;
+import model.UserGenerator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import page.*;
-import client.UserClient;
-import model.User;
-import model.UserGenerator;
+import page.AccountPage;
+import page.CabinetPage;
+import page.CurrentPage;
+import page.MainPage;
 
 import static driver.WebDriverCreator.createWebDriver;
-import static org.junit.Assert.assertEquals;
 import static elements.HeaderElements.TOP_CABINET_BUTTON;
 import static elements.UrlList.*;
+import static org.junit.Assert.assertEquals;
 
 public class CabinetTest {
 
-    private WebDriver driver;
     UserClient userClient = new UserClient();
+    private WebDriver driver;
 
     @Before
     public void setUp() {
@@ -26,7 +29,7 @@ public class CabinetTest {
     }
 
     @Test
-    public void redirectFromCabinetToConstructorSuccess(){
+    public void redirectFromCabinetToConstructorSuccess() {
         User user = UserGenerator.getRandom();
         userClient.create(user);
         AccountPage accountPage = new AccountPage(driver);
@@ -43,8 +46,9 @@ public class CabinetTest {
         currentPage.waitForUrl(MAIN_PAGE_URL);
         assertEquals("Не перешли на страницу конструктора", MAIN_PAGE_URL, currentPage.getPageUrl());
     }
+
     @Test
-    public void redirectFromCabinetToMainPageSuccess(){
+    public void redirectFromCabinetToMainPageSuccess() {
         User user = UserGenerator.getRandom();
         userClient.create(user);
         AccountPage accountPage = new AccountPage(driver);
@@ -61,8 +65,9 @@ public class CabinetTest {
         currentPage.waitForUrl(MAIN_PAGE_URL);
         assertEquals("Не перешли на страницу конструктора", MAIN_PAGE_URL, currentPage.getPageUrl());
     }
+
     @Test
-    public void logoutFromCabinetSuccess(){
+    public void logoutFromCabinetSuccess() {
         User user = UserGenerator.getRandom();
         userClient.create(user);
         AccountPage accountPage = new AccountPage(driver);
@@ -84,12 +89,15 @@ public class CabinetTest {
         accountPage.logIn();
 
     }
+
     @After
-    public void cleanUp(){
+    public void cleanUp() {
         CurrentPage currentPage = new CurrentPage(driver);
         String accessToken = currentPage.getAuthToken();
 
-        if(accessToken!=null){userClient.delete(accessToken);}
+        if (accessToken != null) {
+            userClient.delete(accessToken);
+        }
         driver.quit();
     }
 }

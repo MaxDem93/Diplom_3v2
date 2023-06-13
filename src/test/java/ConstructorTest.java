@@ -9,9 +9,10 @@ import page.MainPage;
 
 import static driver.WebDriverCreator.createWebDriver;
 
-public class ConstructorTest  {
+public class ConstructorTest {
     UserClient userClient = new UserClient();
     private WebDriver driver;
+
     @Before
     public void setUp() {
         driver = createWebDriver();
@@ -48,11 +49,13 @@ public class ConstructorTest  {
     }
 
     @After
-    public void cleanUp(){
+    public void cleanUp() {
         CurrentPage currentPage = new CurrentPage(driver);
         String accessToken = currentPage.getAuthToken();
 
-        if(accessToken!=null){userClient.delete(accessToken);}
+        if (accessToken != null) {
+            userClient.delete(accessToken);
+        }
         driver.quit();
     }
 }

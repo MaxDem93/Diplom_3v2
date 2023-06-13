@@ -1,6 +1,7 @@
 package model;
 
 import org.apache.commons.lang3.RandomStringUtils;
+
 public class UserGenerator {
     public static User getRandom() {
         String email = RandomStringUtils.randomAlphabetic(10) + "@" + RandomStringUtils.randomAlphabetic(4) + "." + RandomStringUtils.randomAlphabetic(2);

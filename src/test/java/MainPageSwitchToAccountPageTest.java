@@ -9,21 +9,24 @@ import page.CurrentPage;
 import page.MainPage;
 
 import static driver.WebDriverCreator.createWebDriver;
-import static org.junit.Assert.assertEquals;
-import static page.MainPage.*;
 import static elements.HeaderElements.TOP_CABINET_BUTTON;
 import static elements.UrlList.ACCOUNT_PAGE_URL;
+import static org.junit.Assert.assertEquals;
+import static page.MainPage.MIDDLE_CABINET_BUTTON;
+
 @RunWith(Parameterized.class)
 public class MainPageSwitchToAccountPageTest {
+    private final String button;
     UserClient userClient = new UserClient();
     private WebDriver driver;
-    private final String button;
-    public MainPageSwitchToAccountPageTest(String button){
+
+    public MainPageSwitchToAccountPageTest(String button) {
         this.button = button;
     }
+
     @Parameterized.Parameters
     public static Object[][] getSumData() {
-        return new Object[][] {
+        return new Object[][]{
                 {TOP_CABINET_BUTTON},
                 {MIDDLE_CABINET_BUTTON},
         };
@@ -35,7 +38,7 @@ public class MainPageSwitchToAccountPageTest {
     }
 
     @Test
-    public void burgerOpenAccountPageSuccessful(){
+    public void burgerOpenAccountPageSuccessful() {
         MainPage page = new MainPage(driver);
         page.open();
         page.openCabinetPage(button);
@@ -43,12 +46,15 @@ public class MainPageSwitchToAccountPageTest {
         currentPage.waitForUrl(ACCOUNT_PAGE_URL);
         assertEquals("Не перешли на страницу логина", ACCOUNT_PAGE_URL, currentPage.getPageUrl());
     }
+
     @After
-    public void cleanUp(){
+    public void cleanUp() {
         CurrentPage currentPage = new CurrentPage(driver);
         String accessToken = currentPage.getAuthToken();
 
-        if(accessToken!=null){userClient.delete(accessToken);}
+        if (accessToken != null) {
+            userClient.delete(accessToken);
+        }
         driver.quit();
     }
 }

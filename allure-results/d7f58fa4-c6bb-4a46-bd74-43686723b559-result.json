@@ -1,1 +1,48 @@
-{"uuid":"d7f58fa4-c6bb-4a46-bd74-43686723b559","historyId":"43b05cd9354630d34ff83a639ec960cc","fullName":"ConstructorTest.clickOnBread","labels":[{"name":"package","value":""},{"name":"testClass","value":"ConstructorTest"},{"name":"testMethod","value":"clickOnBread"},{"name":"suite","value":"ConstructorTest"},{"name":"host","value":"Maria-PC"},{"name":"thread","value":"3632@Maria-PC.main(1)"},{"name":"framework","value":"junit4"},{"name":"language","value":"java"}],"links":[],"name":"Проверка перехода на вкладку Бургеры","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1686692765465,"stop":1686692790994}
+{
+  "uuid": "d7f58fa4-c6bb-4a46-bd74-43686723b559",
+  "historyId": "43b05cd9354630d34ff83a639ec960cc",
+  "fullName": "ConstructorTest.clickOnBread",
+  "labels": [
+    {
+      "name": "package",
+      "value": ""
+    },
+    {
+      "name": "testClass",
+      "value": "ConstructorTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "clickOnBread"
+    },
+    {
+      "name": "suite",
+      "value": "ConstructorTest"
+    },
+    {
+      "name": "host",
+      "value": "Maria-PC"
+    },
+    {
+      "name": "thread",
+      "value": "3632@Maria-PC.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit4"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "Проверка перехода на вкладку Бургеры",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686692765465,
+  "stop": 1686692790994
+}
