@@ -1,0 +1,48 @@
+{
+  "uuid": "166bd35a-b479-4c7c-ad43-3774f82d72b2",
+  "historyId": "d3949b750d2a4a7b49c1ceda869c5dfd",
+  "fullName": "MainPageSwitchToAccountPageTest.burgerOpenAccountPageSuccessful[1]",
+  "labels": [
+    {
+      "name": "package",
+      "value": ""
+    },
+    {
+      "name": "testClass",
+      "value": "MainPageSwitchToAccountPageTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "burgerOpenAccountPageSuccessful[1]"
+    },
+    {
+      "name": "suite",
+      "value": "MainPageSwitchToAccountPageTest"
+    },
+    {
+      "name": "host",
+      "value": "Maria-PC"
+    },
+    {
+      "name": "thread",
+      "value": "7524@Maria-PC.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit4"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "burgerOpenAccountPageSuccessful[1]",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686693439729,
+  "stop": 1686693457061
+}

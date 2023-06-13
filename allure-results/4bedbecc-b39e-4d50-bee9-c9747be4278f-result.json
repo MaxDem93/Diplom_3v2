@@ -1,0 +1,48 @@
+{
+  "uuid": "4bedbecc-b39e-4d50-bee9-c9747be4278f",
+  "historyId": "2eb42edc0ab92f6e702f3aa7880ff147",
+  "fullName": "ConstructorTest.clickOnIngredient",
+  "labels": [
+    {
+      "name": "package",
+      "value": ""
+    },
+    {
+      "name": "testClass",
+      "value": "ConstructorTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "clickOnIngredient"
+    },
+    {
+      "name": "suite",
+      "value": "ConstructorTest"
+    },
+    {
+      "name": "host",
+      "value": "Maria-PC"
+    },
+    {
+      "name": "thread",
+      "value": "3632@Maria-PC.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit4"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "Проверка перехода на вкладку Начинки",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686692806894,
+  "stop": 1686692823195
+}
